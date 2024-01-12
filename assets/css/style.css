@@ -10,10 +10,15 @@
     color : whitesmoke;
 }
 
+.logo {
+    background-color: black;
+}
+
 #celta {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    color: blue;
+    color: white;
+    padding: 10px 50px 30px;
 
 }
 
