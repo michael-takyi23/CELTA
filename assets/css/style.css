@@ -1,0 +1,12 @@
+
+.header-container strong {
+    text-size-adjust: bold;
+    color: blue;
+}
+
+.header-container {
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    color : whitesmoke;
+}
+
