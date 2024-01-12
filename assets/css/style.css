@@ -10,3 +10,13 @@
     color : whitesmoke;
 }
 
+#celta {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: blue;
+
+}
+
+.btn {
+    color: orange;
+}
