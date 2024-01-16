@@ -1,7 +1,7 @@
 
 .header-container strong {
     text-size-adjust: bold;
-    color: blue;
+    color: orange;
 }
 
 .header-container {
@@ -28,11 +28,18 @@
     height: auto;
 }
 
-.btn {
+#celta p {
+    font-weight: 400;
     color: orange;
+}
+
+.btn {
+    color: white;
+    background-color: orange;
 }
 
 .workshops{
     background-color: black;
     background-size: cover;
 }
+
