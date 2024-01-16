@@ -28,17 +28,12 @@
     height: auto;
 }
 
-#celta p {
-    font-weight: 400;
-    color: orange;
-}
-
 .btn {
     color: white;
     background-color: orange;
 }
 
-h2 {
+h3 {
     color: orange;
 	text-transform: uppercase;
 	font-weight: 100;   
