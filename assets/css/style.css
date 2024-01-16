@@ -38,8 +38,10 @@
     background-color: orange;
 }
 
-.workshops{
-    background-color: black;
-    background-size: cover;
+h2 {
+    color: orange;
+	text-transform: uppercase;
+	font-weight: 100;   
 }
+
 
