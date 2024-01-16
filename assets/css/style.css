@@ -12,16 +12,27 @@
 
 .logo {
     background-color: black;
+    background-size: cover;
+
 }
 
 #celta {
     font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
     text-transform: uppercase;
     color: white;
-    padding: 10px 50px 30px;
+}
 
+#hero-image {
+    width: 100%;
+    height: auto;
 }
 
 .btn {
     color: orange;
+}
+
+.workshops{
+    background-color: black;
+    background-size: cover;
 }
