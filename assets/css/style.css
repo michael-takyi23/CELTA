@@ -1,26 +1,182 @@
+:root {
+    --color-primary: orange;
+    --color-secondary: orangered;
+    --color-accent: blue;
+    --color-white: white;
+    --color-whitesmoke: whitesmoke;
+    --color-black: black;
 
-.header-container strong {
-    text-size-adjust: bold;
-    color: orange;
+    --font-primary: 'Lato', sans-serif;
+    --font-accent: 'Oswald', sans-serif;
+
+    --header-heght: 4rem;
+}
+
+html, body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-accent);
+}
+h1 {
+    font-size: 3.25rem;
+    line-height: var(--header-heght);
+    font-weight: 400;
+}
+h2 {
+    font-size: 3rem;
+    line-height: 3.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    font-weight: 100;
+    color: var(--color-primary);
+}
+h4 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+h5 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.header-title {
+    width: 100%;
+    font-size: 1.5rem;
+    z-index: 601;
+    background: var(--color-black);
+}
+
+@media screen and (min-width: 600px) {
+    .header-title {
+        font-size: 3.25rem;
+    }
 }
 
 .header-container {
-    font-family: 'Lato', sans-serif;
-    background-color: black;
-    color : whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    color : var(--color-whitesmoke);
+    z-index: 600;
+}
+
+.header-container strong {
+    text-size-adjust: bold;
+    color: var(--color-primary);
+}
+
+.icon-button {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.25rem;
+    background-color: transparent;
+    color: var(--color-primary);
+    border: none;
+}
+
+.icon-button:not(:disabled) {
+    cursor: pointer;
+}
+
+.hamburger-icon-button {
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    z-index: 602;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    transform: translateY(-120px);
+    transition: transform .3s ease-in-out;
+    background-color: var(--color-black);
+    z-index: 600;
+}
+
+.menu.open {
+    transform: translateY(var(--header-heght));
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: color .3s ease-in-out;
+}
+.menu a:hover {
+    color: var(--color-primary);;
+}
+.menu a.active {
+    color: var(--color-primary);
+}
+.menu a.active:hover {
+    color: var(--color-white);
+}
+
+.navigation-wrapper {
+    flex: 1 1 0;
+}
+
+@media screen and (min-width: 600px) {
+    .menu {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hamburger-icon-button {
+        display: none;
+    }
+    .menu {
+        position: relative;
+        right: unset;
+        left: unset;
+        top: unset;
+        transform: translateY(0);
+    }
+    .menu.open {
+        transform: translateY(0);
+    }
+    .header-title {
+        width: fit-content;
+        flex: 1 1 300px;
+    }
+
 }
 
 .logo {
-    background-color: black;
+    background-color: var(--color-black);
     background-size: cover;
-
 }
 
 #celta {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
     text-transform: uppercase;
-    color: orange;
+    color: var(--color-primary);
 }
 
 #hero-image {
@@ -30,13 +186,29 @@
 
 .btn {
     color: white;
-    background-color: orange;
+    background-color: var(--color-primary);
 }
 
-h3 {
-    color: orange;
-	text-transform: uppercase;
-	font-weight: 100;   
+.btn {
+    display: block;
+    padding: .75rem 1rem;
+    margin: 0 auto;
+    color: var(--color-white);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color .3s ease-in-out,
+                background-color .3s ease-in-out;
+}
+.btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+.btn:not(:disabled) {
+    cursor: pointer;
 }
 
-
+.about-us {
+    background-color: var(--color-black);
+    color: var(--color-white);+
+}

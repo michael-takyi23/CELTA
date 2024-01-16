@@ -13,77 +13,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--title-->
     <title>CELTA: Community Engagement with Literature and The Arts - Book and Poetry Club</title>
 
     <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 
 <body>
-    <header>
-      <div class="header-container">
-        <h1><strong>CELTA</strong> - Book and Poetry Club</h1>
+    <header class="header-container">
+        <h1 class="header-title">
+            <strong>CELTA</strong> - Book and Poetry Club
+        </h1>
 
-        <nav>
-            <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+        <nav class="navigation-wrapper">
+            <button class="hamburger-icon-button icon-button"  id="hamburger-button">
+                <i class="fa-solid fa-bars hamburger-icon" id="hamburger-icon"></i>
+            </button>
             <ul id="menu" class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
             </ul>
         </nav>
-      </div>
     </header>
 
     <main>
         <section class="logo">
             <div id="celta">
-                <h2>Community Engagement with Literature and The Arts</h2>  
+                <h2>Community Engagement with Literature and The Arts</h2>
             </div>
             <div id="hero-image">
                 <img src="assets/images/celta-img.png" alt="CELTA image">
-                <button type="button" class="btn btn-outline btn-lg">Join Us</button>
+                <a href="signup.html" type="button" class="btn btn-outline btn-lg">Join Us</a>
             </div>
         </section>
 
         <section class="about-us">
             <div>
-                <h3>About Us</h2>
-            </div>    
+                <h3>About Us</h3>
+            </div>
             <div id="mission">
-                <h4>Our Mission</h3>
+                <h4>Our Mission</h4>
                 <p></p>
             </div>
             <div id="goals">
-                <h4>Our Goals</h3>
+                <h4>Our Goals</h4>
                 <p></p>
             </div>
         </section>
 
         <section class="workshops">
             <div>
-                <h3>Creative Workshops</h2>
+                <h3>Creative Workshops</h3>
                 <img src="assets/images/cworkshop.png" alt="children gathered around a big book with a pen">
                 <ul id="">
                     <li>Writing Workshops</li>
                     <li>Reading Workshops</li>
                     <li>Painting Workshops</li>
                 </ul>
-            </div>    
-             
+            </div>
+
         </section>
 
-        
-        
+
+
     </main>
-    
+
 
     <script src="assets/js/script.js"></script>
 </body>
