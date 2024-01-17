@@ -211,11 +211,38 @@ h5 {
 }
 
 footer {
-    background: #333;
+    background: black;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem 0;
     transition: background-color 0.3s ease;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .social-links,
+    .copyright {
+        margin-bottom: 10px;
+    }
 }
 
   footer:hover {
@@ -236,7 +263,6 @@ footer {
     font-size: 30px; 
     transition: color 0.3s ease; 
 }
-  
   
   .social-links a:hover, .social-links a:focus {
     color: orange;
