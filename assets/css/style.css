@@ -19,9 +19,10 @@ html, body {
     position: relative;
 }
 
-h1, h2, h3, h4, h5, {
+h1, h2, h3, h4, h5 {
     font-family: var(--font-accent);
 }
+
 h1 {
     font-size: 3.25rem;
     line-height: var(--header-heght);
@@ -33,6 +34,7 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
 }
+
 h3 {
     font-size: 2.25rem;
     line-height: 2.625rem;
@@ -47,11 +49,6 @@ h4 {
 h5 {
     font-size: 1.25rem;
     line-height: 1.75rem;
-    font-weight: 400;
-}
-h6 {
-    font-size: 1rem;
-    line-height: 1.5rem;
     font-weight: 400;
 }
 
