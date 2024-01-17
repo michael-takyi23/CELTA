@@ -218,9 +218,19 @@ footer {
     transition: background-color 0.3s ease;
 }
 
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center; 
+    max-width: 1200px; 
+    margin: auto;
+}
+
 .contact-info {
-    flex: 1;
-    padding: 10px 0;
+    flex: .5;
+    padding: .75rem 1rem;
 }
 
 .contact-info a {
@@ -228,8 +238,12 @@ footer {
     color: white;
 }
 
+.contact-info a:hover{
+    background-color: blue;
+}
+
 .social-links a {
-    margin: 0 10px;
+    margin: 0 .75rem;
 }
 
 /* Responsive adjustments */
@@ -246,7 +260,7 @@ footer {
 }
 
   footer:hover {
-    background-color: blue; /* Change to blue on hover */
+    background-color: blue;
   }
   
   .social-links {
