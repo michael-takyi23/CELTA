@@ -209,3 +209,30 @@ h5 {
     background-color: var(--color-black);
     color: var(--color-white);
 }
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white; /* Change color if needed */
+    font-size: 30px; /* Size of the FontAwesome icons */
+  }
+  
+  /* Optional: If you want to add some transition effects when hovering */
+  .social-links a:hover, .social-links a:focus {
+    color: #ddd; /* Lighten the icon color on hover/focus */
+    transition: color 0.3s ease;
+  }
