@@ -215,6 +215,11 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+  footer:hover {
+    background-color: blue; /* Change to blue on hover */
   }
   
   .social-links {
@@ -227,12 +232,13 @@ footer {
   .social-links a {
     display: inline-block;
     margin: 0 10px;
-    color: white; /* Change color if needed */
-    font-size: 30px; /* Size of the FontAwesome icons */
-  }
+    color: white; 
+    font-size: 30px; 
+    transition: color 0.3s ease; 
+}
   
-  /* Optional: If you want to add some transition effects when hovering */
+  
   .social-links a:hover, .social-links a:focus {
-    color: #ddd; /* Lighten the icon color on hover/focus */
+    color: orange;
     transition: color 0.3s ease;
   }
