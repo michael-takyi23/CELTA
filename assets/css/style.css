@@ -206,8 +206,16 @@ h5 {
 }
 
 .about-us {
+    display: block;
     background-color: var(--color-black);
     color: var(--color-white);
+}
+
+.about-us h3 {
+    padding: 2rem 35rem 1rem;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
 }
 
 footer {
