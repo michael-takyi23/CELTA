@@ -205,18 +205,30 @@ h5 {
     cursor: pointer;
 }
 
-.about-us {
-    display: block;
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-black);
     color: var(--color-white);
+    padding: 50px 20px;
 }
 
-.about-us h3 {
-    padding: 2rem 35rem 1rem;
-    margin: 0;
-    text-align: center;
-    justify-content: center;
+.content, .image {
+    flex: 1;
+  }
+
+.content {
+    max-width: 600px; 
+    padding: 20px;
+  }
+
+.image {
+    background-image: url(assets/images/cworkshop.png);
+    background-size: cover;
+    background-position: center;
 }
+
 
 footer {
     background: black;
