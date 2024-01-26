@@ -269,22 +269,17 @@ h5 {
     padding-bottom: 5rem; 
 }
 
-.c-content, .c-images{
-    flex: 1;
-}  
-
 .c-content {
     display: flex;
     align-items: center;
-    
-}
+    justify-content: flex-start;
+}  
 
 .c-image {
-    background-image: url('..assets/images/cworkshop.png');
-    background-size: cover;
+    flex: 1;
     background-position: center;
-    width: 200px; 
-    height: 200px; 
+    width: 100%; 
+    padding-top: 1rem;
 }
 
 footer {
