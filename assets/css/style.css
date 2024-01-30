@@ -56,7 +56,6 @@ h5 {
     width: 100%;
     font-size: 1.5rem;
     z-index: 601;
-    background: var(--color-black);
 }
 
 @media screen and (min-width: 600px) {
@@ -210,6 +209,7 @@ h5 {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-image: none;
     background-color: var(--color-black);
     color: var(--color-white);
     max-width: 800px; 
@@ -263,6 +263,7 @@ h5 {
 }
 
 .workshops h3 {
+    display: flex;
     text-align: center;
     justify-content: center;
     padding-left: 1rem; 
@@ -277,7 +278,6 @@ h5 {
 
 .c-image {
     flex: 1;
-    background-position: center;
     width: 100%; 
     padding-top: 1rem;
 }
