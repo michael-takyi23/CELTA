@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="container">
+    <div class="row">
+        <h2 class="col-12 text-center">
+            Products
+        </h2>
+        {% for product in products %}
+            <div class="col-12 col-md-6 col-lg-4">
+                <img alt="Product image"
+                     src="{{ product.image }}"
+                     loading="lazy">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.description }}</p>
+                <p>
+                    Price: <b>{{ product.price }}</b>
+                </p>
+
+                <a class="btn btn-secondary"
+                   href="{% url 'product_detail' product.id %}">
+                    View Details
+                </a>
+                <a class="btn btn-primary"
+                   href="{% url 'add_to_cart' product.id %}">
+                    Add to Cart
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Cart</h1>
+<ul>
+{% for order in orders %}
+    <li>{{ order.product.name }} - Quantity: {{ order.quantity }}</li>
+{% endfor %}
+</ul>
+<p>Total Quantity: {{ total_quantity }}</p>
+<p>Total Price: {{ total_price }}</p>
+<a href="{% url 'checkout' %}">Checkout</a>
+{% endblock %}

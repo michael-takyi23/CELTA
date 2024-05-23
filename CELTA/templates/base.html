@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/95a43c4ec4.js" crossorigin="anonymous"></script>
+    <!--title-->
+    <title>CELTA: Community Engagement with Literature and The Arts - Book and Poetry Club</title>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CELTA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- todo -->
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               aria-current="page"
+                               href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Sign In
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <section class="container">
+            <div class="row">
+                <!-- Contact -->
+                <div class="col-12 col-sm-6 col-md-4 text-center">
+                    <p>Contact Us: 04275, Leipzig, Germany. <br>
+                        <a href="mailto:celta2024@gmail.com">celta2024@gmail.com</a>
+                    </p>
+                </div>
+                <!-- Copyright -->
+                <div class="col-12 col-sm-6 col-md-4 text-center">
+                    <p>@ CELTA 2024. All rights reserved</p>
+                </div>
+                <!-- Socials -->
+                <div class="col-12 col-md-4 text-center">
+                    <a href="https://www.youtube.com/user/yourchannel" class="fa fa-youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://www.instagram.com/yourusername" class="fa fa-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script type="application/javascript" src="{% static 'popper/js/popper.min.js' %}"></script>
+    <script type="application/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="application/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

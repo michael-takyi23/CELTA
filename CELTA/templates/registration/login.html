@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="container">
+    <div class="row">
+        <h2 class="col-12 text-center">
+            Login
+        </h2>
+        <form method="post" class="col-12">
+            {% csrf_token %}
+            {{ form.as_p }}
+{##}
+{#            <!-- Email -->#}
+{#            <div class="input-group mb-3">#}
+{#                <label class="input-group-text"#}
+{#                       for="login-email-input">#}
+{#                    Username#}
+{#                </label>#}
+{#                <input type="email"#}
+{#                       name="email"#}
+{#                       id="login-email-input"#}
+{#                       class="form-control"#}
+{#                       placeholder="Email"#}
+{#                       aria-label="Email">#}
+{#            </div>#}
+{##}
+{#            <!-- Password -->#}
+{#            <div class="input-group mb-3">#}
+{#                <label class="input-group-text"#}
+{#                       for="login-password-input">#}
+{#                    Password#}
+{#                </label>#}
+{#                <input type="password"#}
+{#                       name="password"#}
+{#                       class="form-control"#}
+{#                       placeholder="Password"#}
+{#                       aria-label="Password"#}
+{#                       id="login-password-input">#}
+{#            </div>#}
+
+            <button type="submit"
+                    class="btn btn-primary d-inline-block mx-auto mb-3">
+                Login
+            </button>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="container-fluid">
+    <div class="row">
+        <!-- Main Headline -->
+        <h2 class="col-12">
+            Community Engagement with Literature and The Arts
+        </h2>
+        <!-- Hero -->
+        <div class="col-12">
+            <img src="{% static 'images/celta-img.png' %}"
+                 alt="CELTA image"
+                 class="img-fluid">
+            <!-- todo -->
+            <a href="#"
+               type="button"
+               class="d-inline-block btn btn-primary mx-auto">
+                Join Us
+            </a>
+        </div>
+        <!-- About -->
+        <h3 class="col-12 text-center mb-3">
+            About Us
+        </h3>
+        <div class="col-12 col-md-6">
+            <h4>Mission</h4>
+            <p>To ignite a passion for literature and the arts in children, fostering a nurturing environment where young minds can explore their creativity, engage with their peers, and develop a lifelong love for reading and artistic expression.</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <h4>Goals</h4>
+            <p>Inspire children to discover the joy of reading and poetry through interactive sessions and storytelling. Create a platform for children to express themselves and showcase their talents in the arts.</p>
+        </div>
+        <!-- Creative Workshops -->
+        <h3 class="col-12 text-center mb-3">
+            Creative Workshops
+        </h3>
+        <div class="col-12 col-sm-6 fs-3">
+            <ul class="mx-auto w-50 d-block">
+                <li class="">Writing Workshops</li>
+                <li>Reading Workshops</li>
+                <li>Painting Workshops</li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-6">
+            <img src="{% static 'images/cworkshop.png' %}"
+                 class="img-fluid"
+                 alt="Workshop">
+        </div>
+        <div class="col-12">
+            <img src="{% static 'images/community_2.png' %}"
+                 class="img-fluid img-max-height vw-100"
+                 alt="Community 2">
+        </div>
+        <!-- Maps -->
+        <div class="col-12">
+            <iframe src="https://www.google.com/maps/place/Kurt-Eisner-Stra%C3%9Fe,+04275+Leipzig-S%C3%BCd/" width="100%" height="200"></iframe>
+        </div>
+    </div>
+    </section>
+
+{% endblock %}

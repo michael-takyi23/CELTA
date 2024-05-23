@@ -1,0 +1,53 @@
+:root {
+    --color-primary: orange;
+    --color-secondary: orangered;
+    --color-accent: blue;
+    --color-white: white;
+    --color-whitesmoke: whitesmoke;
+    --color-black: black;
+
+    --font-primary: 'Lato', sans-serif;
+    --font-accent: 'Oswald', sans-serif;
+
+    /*--header-heght: 4rem;*/
+}
+
+html, body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-accent);
+}
+
+h1 {
+    font-size: 3.25rem;
+    /*line-height: var(--header-heght);*/
+    font-weight: 400;
+}
+h2 {
+    font-size: 3rem;
+    line-height: 3.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    font-weight: 100;
+    color: var(--color-primary);
+}
+h4 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+h5 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}

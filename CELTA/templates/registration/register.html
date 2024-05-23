@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="container">
+    <div class="row">
+        <h2 class="col-12 text-center">
+            Register
+        </h2>
+        <form method="post" class="col-12">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <!-- Email -->
+            <div class="input-group mb-3">
+                <label class="input-group-text"
+                       for="login-email-input">
+                    Username
+                </label>
+                <input type="email"
+                       name="email"
+                       id="login-email-input"
+                       class="form-control"
+                       placeholder="Email"
+                       aria-label="Email">
+            </div>
+
+            <!-- Firstname -->
+            <div class="input-group mb-3">
+                <label class="input-group-text"
+                       for="login-firstname-input">
+                    Firstname
+                </label>
+                <input type="text"
+                       name="firstname"
+                       id="login-firstname-input"
+                       class="form-control"
+                       placeholder="Firstname"
+                       aria-label="Firstname">
+            </div>
+
+            <!-- Lastname -->
+            <div class="input-group mb-3">
+                <label class="input-group-text"
+                       for="login-lastname-input">
+                    Lastname
+                </label>
+                <input type="text"
+                       name="lastname"
+                       id="login-lastname-input"
+                       class="form-control"
+                       placeholder="Lastname"
+                       aria-label="Lastname">
+            </div>
+
+            <!-- Birthday -->
+            <div class="input-group mb-3">
+                <label class="input-group-text"
+                       for="login-birthday-input">
+                    Birthday
+                </label>
+                <input type="date"
+                       name="birthday"
+                       id="login-birthday-input"
+                       class="form-control"
+                       placeholder="Birthday"
+                       aria-label="Birthday">
+            </div>
+
+            <!-- Password -->
+            <div class="input-group mb-3">
+                <label class="input-group-text"
+                       for="login-password-input">
+                    Password
+                </label>
+                <input type="password"
+                       name="password"
+                       class="form-control"
+                       placeholder="Password"
+                       aria-label="Password"
+                       id="login-password-input">
+            </div>
+
+            <!-- Repeat Password -->
+            <div class="input-group mb-3">
+                <label class="input-group-text"
+                       for="login-repeat-password-input">
+                    Repeat Password
+                </label>
+                <input type="password"
+                       name="repeatPassword"
+                       class="form-control"
+                       placeholder="Repeat Password"
+                       aria-label="Repeat Password"
+                       id="login-repeat-password-input">
+            </div>
+
+            <!-- Submit -->
+            <button type="submit"
+                    class="btn btn-primary d-inline-block mx-auto mb-3">
+                Login
+            </button>
+        </form>
+    </div>
+</section>
+{% endblock %}
