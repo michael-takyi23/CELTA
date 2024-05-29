@@ -1,4 +1,11 @@
-Django
-Pillow
-djangorestframework
-django-money
+asgiref==3.8.1
+Babel==2.15.0
+Django==5.0.6
+django-money==3.5.2
+djangorestframework==3.15.1
+gunicorn==20.1.0
+pillow==10.3.0
+py-moneyed==3.0
+setuptools==70.0.0
+sqlparse==0.5.0
+typing_extensions==4.11.0
