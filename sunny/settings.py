@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-vro6a4fic1s!4yjw(%ag*k(c-z4u$(m$bm(6h1l1=c4s@=-(3d
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['8000-nielmc-django-project-0kylrta3cs.us2.heroku.com/celta.git']
+ALLOWED_HOSTS = ['8000-nielmc-celta-0kylrta3cs.us2,'.herokuapp.com'']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'CELTA',
-    'sunny',
+    
     'rest_framework',
 ]
 
