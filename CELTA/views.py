@@ -1,9 +1,13 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponse
 
 from .forms import ProductForm
 from .models import Product, Order
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+
+def index(request):
+    return HttpResponse('celta')
 
 def home(request):
     return render(request, 'home.html')
