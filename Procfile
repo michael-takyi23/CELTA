@@ -1,1 +1,1 @@
-web: gunicorn CELTA.wsgi
+web: gunicorn celta.wsgi
